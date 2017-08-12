@@ -3,9 +3,9 @@
 - in main 
 
 ```javascript
-const {main} = require("electron-nokogiri");
+const nokogiri = require("electron-nokogiri");
 
-message.use('terminals', (next, params, event) => {
+nokogiri.use('terminals', (next, params, event) => {
     // params => your params
     // event  => hook of  ipcMain event
     // next  callback 
@@ -13,7 +13,7 @@ message.use('terminals', (next, params, event) => {
     next(result)
 });
     
-message.sockets('terminals/:pid',({socket,params}) => {
+nokogiri.sockets('terminals/:pid',({socket,params}) => {
     
     socket.send('hello electron');
 
@@ -29,9 +29,9 @@ message.sockets('terminals/:pid',({socket,params}) => {
 
 - in render
 ```javascript
-const {web} = require("electron-nokogiri");
+const {fetcher,webSocket} = require("electron-nokogiri/lib/web");
 
-web.fetcher('terminals',params).then((data)=>{
+fetcher('terminals',params).then((data)=>{
     console.info(data)
 });
 
