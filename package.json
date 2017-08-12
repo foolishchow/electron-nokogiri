@@ -1,0 +1,13 @@
+{
+  "name": "electron-nokogiri",
+  "version": "0.0.1",
+  "description": "light weight fetch and websocket defined by `electron ipcRender`",
+  "main": "index.js",
+  "keywords": [
+    "electron",
+    "websocket",
+    "fetch"
+  ],
+  "author": "foolishchow",
+  "license": "MIT"
+}
