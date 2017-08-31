@@ -1,6 +1,6 @@
 {
   "name": "electron-nokogiri",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "light weight fetch and websocket defined by `electron ipcRender`",
   "main": "lib/main/index.js",
   "keywords": [
@@ -9,5 +9,12 @@
     "fetch"
   ],
   "author": "foolishchow",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "js-beautify": "^1.6.14",
+    "strip-bom": "^3.0.0"
+  },
+  "peerDependencies": {
+    "vue-template-compiler": "^2.1.2"
+  }
 }
