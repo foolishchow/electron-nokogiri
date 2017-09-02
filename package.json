@@ -1,6 +1,6 @@
 {
   "name": "electron-nokogiri",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "light weight fetch and websocket defined by `electron ipcRender`",
   "main": "lib/main/index.js",
   "keywords": [
@@ -16,5 +16,10 @@
   },
   "peerDependencies": {
     "vue-template-compiler": "^2.1.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/foolishchow/electron-nokogiri/issues"
+  },
+  "homepage": "https://github.com/foolishchow/electron-nokogiri#readme"
+  
 }
