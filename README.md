@@ -5,8 +5,9 @@
 ```javascript
 const nokogiri = require("electron-nokogiri");
 
-nokogiri.use('terminals', (next, params, event) => {
+nokogiri.use('terminal/:pid', (next, params,param, event) => {
     // params => your params
+    // param {pid:''}
     // event  => hook of  ipcMain event
     // next  callback 
     //after done your things 
@@ -31,7 +32,7 @@ nokogiri.sockets('terminals/:pid',({socket,params}) => {
 ```javascript
 const {fetcher,webSocket} = require("electron-nokogiri/lib/web");
 
-fetcher('terminals',params).then((data)=>{
+fetcher('terminal/1111',params).then((data)=>{
     console.info(data)
 });
 
